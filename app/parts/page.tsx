@@ -300,6 +300,57 @@ export default function Parts() {
       </div>
 
       {/* 以下Q&Aエリア */}
+<div className="qa-wrapper pt-1">
+  <dl className="qa-container">
+    
+    <div className="qa-item">
+      <input type="checkbox" id="qa-1" className="qa-toggle" />
+      <label htmlFor="qa-1" className="qa-header">
+        <span className="qa-label">Q</span>
+        <dt className="qa-ttl">質問テキストテキストテキスト</dt>
+        <svg className="qa-icon" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </label>
+      <div className="qa-inner">
+        <span className="qa-label">A</span>
+        <dd className="qa-text">回答テキストテキストテキスト</dd>
+      </div>
+    </div>
+
+    <div className="qa-item">
+      <input type="checkbox" id="qa-2" className="qa-toggle" />
+      <label htmlFor="qa-2" className="qa-header">
+        <span className="qa-label">Q</span>
+        <dt className="qa-ttl">質問テキストテキストテキスト</dt>
+        <svg className="qa-icon" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </label>
+      <div className="qa-inner">
+        <span className="qa-label">A</span>
+        <dd className="qa-text">回答テキストテキストテキスト</dd>
+      </div>
+    </div>
+
+    <div className="qa-item">
+      <input type="checkbox" id="qa-3" className="qa-toggle" />
+      <label htmlFor="qa-3" className="qa-header">
+        <span className="qa-label">Q</span>
+        <dt className="qa-ttl">質問テキストテキストテキスト</dt>
+        <svg className="qa-icon" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </label>
+      <div className="qa-inner">
+        <span className="qa-label">A</span>
+        <dd className="qa-text">回答テキストテキストテキスト</dd>
+      </div>
+    </div>
+
+  </dl>
+</div>
+
 
       {/* Tableエリア */}
       <div className="padding"></div>

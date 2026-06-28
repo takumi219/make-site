@@ -276,6 +276,54 @@ border-radius: 12px 12px 0 0;
     color: white;
 }
 
+.qa-item {
+    margin-bottom: 32px;
+}
+.qa-header,
+.qa-inner {
+    display: flex;
+    align-items: center;
+    padding: 20px 64px;
+}
+.qa-ttl,
+.qa-text {
+    margin-inline: 40px;
+}
+
+.qa-toggle {
+    display: none;
+}
+
+.qa-header {
+    cursor: pointer;
+    user-select: none;
+}
+
+.qa-inner {
+    max-height: 0;
+    overflow: hidden;
+    padding-top: 0;
+    padding-bottom: 0;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+    opacity: 0;
+}
+
+.qa-icon {
+    margin-left: auto;
+    transition: transform 0.3s ease;
+}
+
+.qa-toggle:checked ~ .qa-inner {
+    max-height: 500px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    opacity: 1;
+}
+
+.qa-toggle:checked ~ .qa-header .qa-icon {
+    transform: rotate(180deg);
+}
+
 @media (max-width: 768px) {
     .grid-2, .grid-3, .grid-4 {
         grid-template-columns: repeat(1, 1fr) !important;
