@@ -1,26 +1,141 @@
-@import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+a{
+  text-decoration: none;
 }
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+p{
+  margin: 0;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.wrapper{
+  padding-block: 8%;
+  width: 100%;
+  container-type: inline-size;
+}
+.ttl-level1-cta{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gap20{
+  gap:20px;
+}
+.gap40{
+  gap: 40px;
+}
+.ttl-level1-img{
+  display: flex;
+}
+.ttl-level1{
+  text-align: center;
+    display: flex;
+  flex-direction: column;
+}
+.ttl-level1.flex{
+  flex-direction: row;
+}
+.ttl-level1-sub-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.ttl-level1-sub-text.left{
+  align-items: flex-start;
+}
+.ttl-level1-sub-text.left .reverse{
+  text-align: left;
+}
+.reverse{
+  display: flex;
+  flex-direction: column-reverse;
+}
+.left{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: fit-content;
+  text-align: left;
+  margin: 0 auto;
+}
+h1{
+  font-size: 36px;
+}
+.sub{
+  margin-block: 12px;
+}
+.ttl-level1-sub-text .sub{
+  margin-bottom: 0;
+}
+.header__btn > a{
+padding: 8px 12px;
+background-color: red;
+color: white;
+border-radius: 9999999px;
+}
+.ctn-btn2 > a{
+background-color: blue;
+}
+.parts{
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 80px;
+}
+.btn2{
+gap: 24px;
+}
+.column{
+  flex-direction: column;
+  gap: 40px;
+}
+.flex{
+  display: flex;
+  justify-content: space-evenly
+}
+.flex.widht{
+  width: 98%;
+  margin: 0 auto;
+}
+.flex.widht .left{
+  margin: initial;
+}
+.start{
+  align-items: start;
+}
+.center{
+  align-items: center;
+}
+.end{
+  align-items: end;
+}
+.flex h1{
+  margin: 0;
+}
+.border{
+  box-sizing: border-box;
+  padding: 24px 32px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+}
+.flex-cta{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.flex-cta.left{
+  align-items: flex-start;
+}
+.ttl-level1.flex img,
+.flex img {
+  max-width: 100%;
+  height: auto;
+}
+@container (max-width: 600px){
+  .ttl-level1.flex{
+    flex-direction: column;
   }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  .flex{
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
 }
